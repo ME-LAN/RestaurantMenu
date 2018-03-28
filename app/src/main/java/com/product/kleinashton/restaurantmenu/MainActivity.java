@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         restaurantName.add(new Word("Cafe Monk", "Ahmedabad"));
         restaurantName.add(new Word("New York Tag ", "Ahmedabad"));
         restaurantName.add(new Word("Contryard", "Ahmedabad"));
+        restaurantName.add(new Word("Pakwan", "Ahmedabad"));
 
         ResAdapter resAdapter = new ResAdapter(this, restaurantName);
         lv.setAdapter(resAdapter);
