@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -17,6 +18,7 @@ import java.util.List;
 
 public class ResAdapter extends ArrayAdapter<Word> {
     TextView resNametv,resCitytv;
+    ImageView rowImg;
 
     public ResAdapter(@NonNull Context context, @NonNull List<Word> objects) {
         super(context,0, objects);
@@ -38,6 +40,9 @@ public class ResAdapter extends ArrayAdapter<Word> {
 
         resCitytv =  resWordView.findViewById(R.id.resCity);
         resCitytv.setText(resWord.getRescity());
+
+        rowImg = resWordView.findViewById(R.id.rowImg);
+        rowImg.setImageResource(resWord.getImgId());
 
         return resWordView;
     }

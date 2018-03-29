@@ -27,15 +27,11 @@ public class MainActivity extends AppCompatActivity {
         lv =  findViewById(R.id.listres);
         restaurantName = new ArrayList();
 
-        restaurantName.add(new Word("Kabir", "Ahmedabad"));
-        restaurantName.add(new Word("Jay Bhole", "Ahmedabad"));
-        restaurantName.add(new Word("Jay Ambe", "Ahmedabad"));
-        restaurantName.add(new Word("Novotel", "Ahmedabad"));
-        restaurantName.add(new Word("Hyatt", "Ahmedabad"));
-        restaurantName.add(new Word("Cafe Monk", "Ahmedabad"));
-        restaurantName.add(new Word("New York Tag ", "Ahmedabad"));
-        restaurantName.add(new Word("Contryard", "Ahmedabad"));
-        restaurantName.add(new Word("Pakwan", "Ahmedabad"));
+        restaurantName.add(new Word("Kabir", "Ahmedabad", R.drawable.first));
+        restaurantName.add(new Word("Jay Bhole", "Ahmedabad", R.drawable.second));
+        restaurantName.add(new Word("Jay Ambe", "Ahmedabad", R.drawable.third));
+        restaurantName.add(new Word("Novotel", "Ahmedabad", R.drawable.fourth));
+        restaurantName.add(new Word("Hyatt", "Ahmedabad", R.drawable.fifth));
 
         ResAdapter resAdapter = new ResAdapter(this, restaurantName);
         lv.setAdapter(resAdapter);

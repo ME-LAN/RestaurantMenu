@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.product.kleinashton.restaurantmenu.MainActivity">
+    tools:context="com.product.kleinashton.restaurantmenu.MainActivity"
+    android:background="#EEEEEE">
 
     <ListView
         android:id="@+id/listres"

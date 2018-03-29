@@ -6,10 +6,14 @@ package com.product.kleinashton.restaurantmenu;
 
 public class Word {
     private String resName,rescity;
+    private int imgId;
 
-    public Word(String resName, String rescity) {
+
+
+    public Word(String resName, String rescity, int imgId) {
         this.resName = resName;
         this.rescity = rescity;
+        this.imgId = imgId;
     }
 
     public String getResName() {
@@ -19,4 +23,6 @@ public class Word {
     public String getRescity() {
         return rescity;
     }
+
+    public int getImgId() { return imgId; }
 }
